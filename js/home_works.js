@@ -60,3 +60,10 @@ start.addEventListener("click",start_func = () =>{c++})
 start.addEventListener("click",timer,)
 stop.addEventListener("click",stop_func = () =>{b++;c=1;})
 reset.addEventListener("click",reset_func = () =>{i=0;b++;seconds.innerText= i})
+
+window.addEventListener("scroll", scrollOpen = () =>{
+    if (document.documentElement.scrollTop === 1147){
+        modalOpen()
+        window.removeEventListener("scroll",scrollOpen)
+    }
+})

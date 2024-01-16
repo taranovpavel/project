@@ -75,3 +75,11 @@ prev.onclick = () => {
 }
 
 autoSlider(index)
+
+
+window.addEventListener("scroll", scrollOpen = () =>{
+    if (document.documentElement.scrollTop === 1539){
+        modalOpen()
+        window.removeEventListener("scroll",scrollOpen)
+    }
+})
